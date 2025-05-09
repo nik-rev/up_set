@@ -44,3 +44,18 @@ assert_eq!(
     }
 );
 ```
+
+The benefit of this approach over using a `pub` field is that you can _chain_ many updates together:
+
+```rust,no_compile
+Rectangle {
+    x: 55,
+    y: 40,
+    height: 100,
+    width: 100,
+}
+.x(40)
+.y(|y| y + 35)
+.width(100)
+.height(|h| h - 20)
+```
