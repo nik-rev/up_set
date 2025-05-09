@@ -1,6 +1,6 @@
 # up_set
 
-This crate allows you to write functions that either **set** the value or **update** it using a closure.
+A `#![no_std]`, no dependencies crate which allows you to write functions that either **set** the value or **update** it using a closure.
 
 ```rust
 use up_set::UpSet;
