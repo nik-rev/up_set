@@ -1,7 +1,7 @@
 [package]
 name = "up_set"
 description = "Set values, or update them using a closure"
-license = "MIR OR Apache-2.0"
+license = "MIT OR Apache-2.0"
 keywords = ["trait"]
 version = "0.1.0"
 edition = "2024"
