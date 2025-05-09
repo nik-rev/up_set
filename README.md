@@ -11,8 +11,9 @@ struct Point {
     y: u32,
 }
 
-// `M` is a generic marker to guide Rust's type inference system to choose
-// the correct implementation of `UpSet` for either `u32` or `Fn(u32) -> u32`
+// `M` is a generic marker to guide Rust's type inference
+// system to choose the correct implementation of `UpSet`
+// for either `u32` or `Fn(u32) -> u32`
 impl Point {
     fn x<M, U: UpSet<u32, M>>(mut self, x: U) -> Self {
         self.x = x.up_set(self.x);
