@@ -48,7 +48,7 @@ assert_eq!(
 
 The benefit of this approach over using a `pub` field is that you can _chain_ many updates together:
 
-```rust,no_compile
+```rust,ignore
 Rectangle {
     x: 55,
     y: 40,
